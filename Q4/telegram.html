@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+        <title>First Code</title>
+        <link href="css/materialize-rtl.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" />
+
+
+        
+    </head>
+    <body >
+        <div class = "container">
+            <div class = "TelegramHead" > 
+                  <!-- Modal Trigger -->
+                <a class=" btn modal-trigger mymodal" href="#modal1">
+                        <i class="large material-icons color_dehaze" style="color:red;">dehaze</i>
+                </a>
+                Telegram
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                <div class="modal-content">
+                <h4>Telegram menue</h4>
+                <p>you clicked a sandwich button</p>
+                </div>
+                <div class="modal-footer">
+                    
+        </div>
+  </div>
+            </div>
+            <div class="TelegramBody row">
+                <div class="contacts col s4">
+                        <form>
+                                <div class="input-field x3">
+                                  <input id="search" type="search" required>
+                                  <label class="label-icon" for="search"><i class="material-icons ">search</i></label>
+                                  <i class="material-icons">close</i>
+                                </div>
+                              </form>
+                    <ul class="collection">
+                            <li class="collection-item avatar recent">
+                                    <span class="title">Recent</span>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+                                  </li>
+                            <li class="collection-item avatar person">
+                              <img src="images/girl1.jpg" alt="" class="circle">
+                              <span class="title">Lovelygirl</span>
+                              <p>typing ... <br>
+                              </p>
+                            </li>
+                            <li class="collection-item avatar person">
+                                <img src="images/allisia.jpg" alt="" class="circle">
+                                <span class="title">Allisa Porshe</span>
+                                <p>Hi ! Help me plz... <br>
+                                </p>
+                            </li>
+                            <li class="collection-item avatar person">
+                                <img src="images/robert.jpg" alt="" class="circle">
+                              <span class="title">Robert de niro</span>
+                              <p>
+                                  I am an old man <br>
+                              </p>
+                            </li>
+                            <li class="collection-item avatar recent">
+                                    <span class="title">All contacts</span>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+                                  </li>
+                          </ul>
+
+                </div>
+            <div class="message col s8 ">
+                    <ul class="collection">
+                            <li class="collection-item avatar">
+                            <img src="images/girl1.jpg" alt="" class="circle">
+                            <span class="title">Lovelygirl</span>
+                          </li>
+                        </ul>
+            </div>
+
+            </div>
+        </div>
+
+        <script src="js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems, options);
+              });
+        </script>
+
+            
+    </body>
+</html>
