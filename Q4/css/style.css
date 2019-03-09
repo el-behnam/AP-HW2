@@ -51,3 +51,14 @@ body{
 .person{
 	min-height: 50px !important;
 }
+.typingbar{
+    position: absolute;
+    bottom:-45px;
+    right:0;
+    width: 100%;
+}
+.fake{
+	background-color:whitesmoke;
+	position:relative;
+	height: 480px;
+}
