@@ -1,0 +1,17 @@
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -c
+LXXFLAGS = -std=c++17
+OBJECTS = q1.o libArr.o libVec.o
+TARGET = q1
+
+
+$(TARGET): $(OBJECTS)
+	$(CXX) $(LXXFLAGS) $(OBJECTS) -o $(TARGET)
+q1.o: q1.cpp
+	$(CXX) $(CXXFLAGS) q1.cpp
+libArr.o: libArr.cpp libArr.h
+	$(CXX) $(CXXFLAGS) libArr.cpp
+libVec.o: libVec.cpp libVec.h
+	$(CXX) $(CXXFLAGS) libVec.cpp
+clean:
+	rm -f $(TARGET) $(OBJECTS)

@@ -1,0 +1,13 @@
+#include "guide.h"
+#include <iostream>
+
+guide::guide (int N)
+{
+  std::cout << "constructor called " << std::endl;
+  n=N;
+
+}
+int guide::sum ()
+{
+  return a+b;
+}

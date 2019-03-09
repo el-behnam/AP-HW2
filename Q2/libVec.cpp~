@@ -1,0 +1,7 @@
+#include "libVec.h"
+#include <iostream>
+
+int libVec::counter(int N)
+{
+  
+}
